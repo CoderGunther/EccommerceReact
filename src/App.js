@@ -1,12 +1,17 @@
-
-import './App.css';
-import { Login } from './Login';
-
+import { useState } from "react";
+import "./App.css";
+import CounterContainer from "./components/Counter/CounterContainer";
+import CartWidget from "./components/CartWidget/CartWidget";
+import ItemList from "./components/ItemList/ItemList.jsx";
+import { Navbar } from "./components/Navbar/Navbar.jsx";
 function App() {
+  let saludo = "hola Cristian";
   return (
     <div className="App">
-   <Login />
-   <h1>Esto es propio de App</h1>
+      <Navbar />
+      <ItemList saludo={saludo} />
+      <CounterContainer />
+      <CartWidget />
     </div>
   );
 }
