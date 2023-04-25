@@ -1,0 +1,59 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Celular",
+      "price": 80000,
+      "stock": 25,
+      "description": "Motorola te ofrece el celular más moderno del mercado",
+      "category": "Electro",
+      "img": "https://res.cloudinary.com/dy3hjxbtq/image/upload/v1682310058/Celular%20Motorola.jpg"
+    },
+    {
+      "id": 2,
+      "title": "televisor",
+      "price": 120000,
+      "stock": 35,
+      "description": "Ahora, las escenas de acción lucen impecables. Ya sea que estés disfrutando de tu programa favorito, de un videojuego",
+      "category": "Electro",
+      "img": "https://res.cloudinary.com/dy3hjxbtq/image/upload/v1682310230/Televisor%20LG%2070%27.jpg"
+    },
+
+    {
+      "id": 3,
+      "title": "noteboock",
+      "price": 150000,
+      "stock": 15,
+      "description": "Los procesadores Intel® Core™ te ofrecen rendimiento Gaming superior y flexibilidad para gestionar varias tareas sin esfuerzo. La innovadora arquitectura combina el núcleo y la carga de trabajo adecuados, por lo que las tareas en segundo plano no interrumpirán la partida y te darán libertad para chatear, navegar, transmitir, editar, grabar y jugar sin perder el ritmo.",
+      "category": "Notebook",
+      "img": "https://res.cloudinary.com/dy3hjxbtq/image/upload/v1682310291/Notebook%20Asus.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Impresora",
+      "price": 60000,
+      "stock": 24,
+      "description": "La nueva impresora Epson G3110 proporciona la capacidad de imprimir, copiar y escanear y una pantalla LCD de 3.05 cm el cual permitir fácilmente hacer copias y verificar la conexión de la red. Esta impresora también proporciona muchas de las funciones populares que se encuentran en los modelos anteriores tal como el sistema de tinta híbrido integrado, diseño compacto y capacidades de impresión sin bordes",
+      "category": "Electro",
+      "img": "https://res.cloudinary.com/dy3hjxbtq/image/upload/v1682310945/Impresora%20Epson.jpg"
+    },
+    {
+      "id": 5,
+      "title": "auriculares",
+      "price": 30000,
+      "stock": 5,
+      "description": "Sumerjite en tus mejores juegos",
+      "category": "Electro",
+      "img": "https://res.cloudinary.com/dy3hjxbtq/image/upload/v1682309896/Auriculares%20JBL.jpg"
+    },
+    {
+      "id": 6,
+      "title": "tablet",
+      "price": 40000,
+      "stock": 10,
+      "description": "Transferir, sincronizar y acceder a tus dispositivos las veces que quieras ahora es posible. Sus conexiones wi-fi direct, usb 2.0, wi-fi,bluetooth, smart switch te permiten potenciar sus funciones al máximo",
+      "category": "Notebook",
+      "img": "https://res.cloudinary.com/dy3hjxbtq/image/upload/v1682310160/Tablet%2010%27%20pulgadas.jpg"
+    }
+  ]
+}

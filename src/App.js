@@ -1,18 +1,27 @@
-import { useState } from "react";
-import "./App.css";
-import CounterContainer from "./components/Counter/CounterContainer";
-import CartWidget from "./components/CartWidget/CartWidget";
-import ItemList from "./components/ItemList/ItemList.jsx";
-import { Navbar } from "./components/Navbar/Navbar.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ItemListContainer from "./components/ItemList/ItemListContainer";
+import { ItemDetailContainer } from "./components/ItemDetail/ItemDetailContainer";
+import { Navbar } from "./components/Navbar/Navbar";
+import CartContainer from "./components/Cart/CartContainer";
+import Form from "./components/Form/Form";
+
 function App() {
-  let saludo = "hola Cristian";
   return (
-    <div className="App">
-      <Navbar />
-      <ItemList saludo={saludo} />
-      <CounterContainer />
-      <CartWidget />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Navbar />}>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route
+            path="/category/:categoryName"
+            element={<ItemListContainer />}
+          />
+          <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
+          <Route path="/cart" element={<CartContainer />} />
+          <Route path="/form" element={<Form />} />
+          <Route path="*" element={<h1>La ruta no existe</h1>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

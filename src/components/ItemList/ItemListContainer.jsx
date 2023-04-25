@@ -1,21 +1,29 @@
-import { Typography } from "@mui/material";
 import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
+import { products } from "../../productsMock";
 
-const ItemListContainer = ({ saludo }) => {
-  const [contador, setContador] = useState(0);
+import { useParams } from "react-router-dom";
+
+const ItemListContainer = () => {
+  const [items, setItems] = useState([]);
+
+  const { categoryName } = useParams();
 
   useEffect(() => {
-    console.log("hize la peticion al BACK");
-  }, [saludo]);
+    const productsFiltered = products.filter(
+      (prod) => prod.category === categoryName
+    );
 
-  console.log("me ejecute primero");
+    const tarea = new Promise((resolve, reject) => {
+      resolve(categoryName ? productsFiltered : products);
+    });
+
+    tarea.then((res) => setItems(res)).catch((error) => console.log(error));
+  }, [categoryName]);
 
   return (
     <div>
-      <ItemList saludo={saludo} />
-      <Typography>{contador}</Typography>
-      <button onClick={() => setContador(contador + 1)}>Sumar</button>
+      <ItemList items={items} />
     </div>
   );
 };
