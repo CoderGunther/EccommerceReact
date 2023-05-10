@@ -27,7 +27,12 @@ export const Navbar = () => {
   return (
     <div>
       <div className={styles.containerNavbar}>
-        <Link to="/">Logo de la empresa</Link>
+        <Link to="/">
+          <img
+            src="https://res.cloudinary.com/dy3hjxbtq/image/upload/v1682396282/Logo_png_kgjffc.png"
+            alt="Este es el logo de la empresa"
+          />
+        </Link>
 
         <div className={styles.categories}>
           {categories.map((category) => {
@@ -46,4 +51,3 @@ export const Navbar = () => {
     </div>
   );
 };
-export default Navbar;

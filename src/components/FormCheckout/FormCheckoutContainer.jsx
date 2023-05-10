@@ -48,9 +48,6 @@ export const FormCheckoutContainer = () => {
       email: "",
       phone: null,
     },
-    onSubmit: (data) => {
-      console.log(data);
-    },
     onSubmit: checkoutFn,
     validationSchema: Yup.object().shape({
       nombre: Yup.string()
@@ -67,12 +64,6 @@ export const FormCheckoutContainer = () => {
 
   return (
     <div>
-      <FormCheckout
-        errors={errors}
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-        values={values}
-      />
       {orderId ? (
         <h1>
           Gracias por tu compra el numero comprar es {orderId} por favor

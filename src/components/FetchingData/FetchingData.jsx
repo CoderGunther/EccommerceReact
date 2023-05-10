@@ -28,7 +28,7 @@ const FetchingData = () => {
     fetch("https://jsonplaceholder.typicode.com/users/2", {
       method: "PATCH",
       body: JSON.stringify({
-        name: "Jorge Duje",
+        name: "Cristian Gunther",
       }),
     });
   };

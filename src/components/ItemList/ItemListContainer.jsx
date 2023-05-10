@@ -58,7 +58,7 @@ const ItemListContainer = () => {
         <ItemList items={items} />
       )}
 
-      <h1 style={{ color: items.length > 0 && "red" }}>Mi nombre es pepito</h1>
+      <h1 style={{ color: items.length > 0 && "red" }}>Mi ecommerce</h1>
 
       <button onClick={addProducts}>Agregar productos a firebase</button>
     </div>
